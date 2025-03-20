@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的个人主页</title>
+  <title>我的个人主页 / My Personal Homepage</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       background-color: #f0f0f0;
       margin: 0;
       padding: 20px;
+      line-height: 1.6;
     }
     header {
       background-color: #4caf50;
@@ -24,32 +25,49 @@
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+    .ai-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
     .ai-gallery img {
       width: 300px;
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       margin: 10px;
     }
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #eee;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>欢迎来到我的个人主页</h1>
+    <h1>欢迎来到我的个人主页 / Welcome to My Personal Homepage</h1>
   </header>
+  
   <section>
-    <h2>关于我</h2>
-    <p>你好，我是[你的名字]。热爱编程与设计，对AI技术充满兴趣。</p>
+    <h2>关于我 / About Me</h2>
+    <p>
+      你好，我是[你的名字]。热爱编程与设计，对AI技术充满兴趣。<br>
+      Hello, I am [Your Name]. I am passionate about programming, design, and AI technology.
+    </p>
   </section>
+  
   <section>
-    <h2>我的AI图库</h2>
+    <h2>我的AI图库 / My AI Gallery</h2>
     <div class="ai-gallery">
-      <img src="https://via.placeholder.com/300x200.png?text=AI+Image+1" alt="AI生成图片1">
-      <img src="https://via.placeholder.com/300x200.png?text=AI+Image+2" alt="AI生成图片2">
-      <img src="https://via.placeholder.com/300x200.png?text=AI+Image+3" alt="AI生成图片3">
+      <img src="https://via.placeholder.com/300x200.png?text=AI+Image+1" alt="AI生成图片1 / AI Generated Image 1">
+      <img src="https://via.placeholder.com/300x200.png?text=AI+Image+2" alt="AI生成图片2 / AI Generated Image 2">
+      <img src="https://via.placeholder.com/300x200.png?text=AI+Image+3" alt="AI生成图片3 / AI Generated Image 3">
     </div>
   </section>
-  <footer style="text-align:center; margin-top:20px;">
-    © 2023 [你的名字]
+  
+  <footer>
+    © 2023 [你的名字] / © 2023 [Your Name]
   </footer>
 </body>
 </html>
