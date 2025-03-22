@@ -11,12 +11,14 @@
       margin: 0;
       padding: 20px;
       line-height: 1.6;
+      color: #333;
     }
     header {
       background-color: #4caf50;
       padding: 20px;
       text-align: center;
       color: white;
+      border-radius: 8px;
     }
     section {
       background-color: #fff;
@@ -24,6 +26,11 @@
       margin-top: 20px;
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    section:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     }
     .hobby-gallery {
       display: flex;
@@ -35,12 +42,17 @@
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       margin: 10px;
+      transition: transform 0.3s;
+    }
+    .hobby-gallery img:hover {
+      transform: scale(1.05);
     }
     footer {
       text-align: center;
       margin-top: 20px;
       padding: 10px;
       background-color: #eee;
+      border-radius: 8px;
     }
   </style>
 </head>
