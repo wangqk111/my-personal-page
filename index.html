@@ -1,98 +1,110 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的个人主页 / My Personal Homepage</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      margin: 0;
-      padding: 20px;
-      line-height: 1.6;
-      color: #333;
-    }
-    header {
-      background-color: #4caf50;
-      padding: 20px;
-      text-align: center;
-      color: white;
-      border-radius: 8px;
-    }
-    section {
-      background-color: #fff;
-      padding: 20px;
-      margin-top: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    section:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    }
-    .hobby-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .hobby-gallery img {
-      width: 300px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin: 10px;
-      transition: transform 0.3s;
-    }
-    .hobby-gallery img:hover {
-      transform: scale(1.05);
-    }
-    footer {
-      text-align: center;
-      margin-top: 20px;
-      padding: 10px;
-      background-color: #eee;
-      border-radius: 8px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王庆科的个人主页 | Wang Qingke's Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #87ceeb;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            margin: 20px auto;
+            width: 80%;
+            align-items: flex-start;
+        }
+
+        .left-section {
+            width: 25%;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        .left-section img {
+            width: 288px;
+            height: 512px;
+            border: 4px solid #87ceeb;
+            margin-left: -140px;
+        }
+
+        .right-section {
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .info-box {
+            background-color: #e6f7ff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #87ceeb;
+            color: white;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #87ceeb;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>欢迎来到我的个人主页 / Welcome to My Personal Homepage</h1>
-  </header>
-  
-<section>
-    <h2>关于我 / About Me</h2>
-    <div style="display: flex; align-items: center;">
-        <p style="flex: 2;">
-            你好，我是王庆科。热爱编程与设计，对AI技术充满兴趣。<br>
-            Hello, I am Wang Qing Ke. I am passionate about programming, design, and AI technology.
-        </p>
-        <img src="Skyreels_1742707723859.png" alt="个人照片 / My Photo" style="flex: 1; max-width: 150px; margin-left: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-    </div>
-</section>
+    <header>
+        <h1>欢迎来到王庆科的个人主页 | Welcome to Wang Qingke's Personal Website</h1>
+    </header>
 
-  
-  <section>
-    <h2>我的爱好 / My Hobbies</h2>
-    <div class="hobby-gallery">
-      <img src="digital.jpg" alt="数码 / Digital">
-      <img src="AI.jpg" alt="编程 / Programming">
-      <img src="game.jpg" alt="游戏 / Gaming">
+    <div class="container">
+        <!-- 左侧头像板块 -->
+        <div class="left-section">
+            <img src="Skyreels_1742709802868.png" alt="王庆科的头像 | Wang Qingke's Photo" style="width: 288px; height: 512px;">
+        </div>
+
+        <!-- 右侧内容板块 -->
+        <div class="right-section">
+            <div class="info-box">
+                <h2>个人介绍 | About Me</h2>
+                <p>你好，我是王庆科，一个充满热情和好奇心的人。我来自中国青岛，一个非常美丽的海滨城市。我在中国获得了通信工程学士学位，现在在韩国又松大学读AI硕士。我热衷于电子数码和探索新鲜事物，同时也享受玩游戏带来的挑战和乐趣。<br>
+                   Hello, I am Wang Qingke, a person full of passion and curiosity. I come from Qingdao, China, a very beautiful coastal city. I obtained a bachelor's degree in Communication Engineering in China, and I am currently pursuing a master's degree in AI at Woosong University in South Korea. I am enthusiastic about digital electronics and exploring new things, and I also enjoy the challenges and fun that gaming brings.</p>
+            </div>
+            <div class="info-box">
+                <h2>兴趣爱好 | Hobbies</h2>
+                <ul>
+                    <li>喜欢的游戏: 《英雄联盟》、《王者荣耀》、《和平精英》<br>
+                        Favorite games: League of Legends, Honor of Kings, PUBG Mobile (PlayerUnknown's Battlegrounds Mobile).</li>
+                    <li>喜欢的电影: 《泰坦尼克号》、《哪吒》、《星际穿越》<br>
+                        Favorite movies: Titanic, Ne Zha, Interstellar.</li>
+                </ul>
+            </div>
+            <div class="info-box">
+                <h2>联系方式 | Contact Information</h2>
+                <p>email: qingke981118@gmail.com<br></p>
+                <p>phone: +82-010-2193-2355<br></p>
+                <p>Address: Daejeon, South Korea<br></p>
+            </div>
+        </div>
     </div>
-  </section>
-  
-  <section>
-    <h2>联系方式 / Contact Information</h2>
-    <p>
-      邮箱：<a href="mailto:qingke981118@gmail.com">qingke981118@gmail.com</a><br>
-      电话：010-2193-2355<br>
-      社交媒体：<a href="https://www.your-social-profile.com" target="_blank">我的主页 / My Profile</a>
-    </p>
-  </section>
-  
-  <footer>
-    © 2023 王庆科 / © 2023 Wang Qing Ke
-  </footer>
+
+    <footer>
+        <p>&copy; 2025 王庆科的个人主页 | Wang Qingke's Personal Website. 保留所有权利 | All rights reserved.</p>
+    </footer>
 </body>
 </html>
